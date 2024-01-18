@@ -1,0 +1,47 @@
+<mxfile host="app.diagrams.net" modified="2024-01-18T03:01:37.621Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="5DWps6zW1hgosHEzKrQW" version="22.1.21" type="device">
+  <diagram name="Página-1" id="Lw6xRS25Qv06y2-4oVIu">
+    <mxGraphModel dx="1434" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HompHEP2MCxHwMmD63oR-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="HompHEP2MCxHwMmD63oR-1" target="HompHEP2MCxHwMmD63oR-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HompHEP2MCxHwMmD63oR-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="HompHEP2MCxHwMmD63oR-1" target="HompHEP2MCxHwMmD63oR-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="390" />
+              <mxPoint x="140" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HompHEP2MCxHwMmD63oR-1" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="360" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HompHEP2MCxHwMmD63oR-9" value="Only can get his own information&lt;br&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="HompHEP2MCxHwMmD63oR-2" target="HompHEP2MCxHwMmD63oR-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HompHEP2MCxHwMmD63oR-2" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="525" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HompHEP2MCxHwMmD63oR-3" value="Create User" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="180" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HompHEP2MCxHwMmD63oR-4" value="Get all Users" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="350" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HompHEP2MCxHwMmD63oR-5" value="Find User by email" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="520" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HompHEP2MCxHwMmD63oR-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.017;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="HompHEP2MCxHwMmD63oR-1" target="HompHEP2MCxHwMmD63oR-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="390" />
+              <mxPoint x="140" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
