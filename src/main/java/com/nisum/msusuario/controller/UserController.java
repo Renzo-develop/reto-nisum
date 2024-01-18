@@ -53,7 +53,7 @@ public class UserController {
 
     }
 
-    @GetMapping("/update")
+    @PutMapping("/update")
     @PreAuthorize("hasAnyRole('ROLE_USER','ROLE_ADMIN')")
     public ResponseEntity<ApiResponse> updateUsuario(@RequestBody User user) {
 

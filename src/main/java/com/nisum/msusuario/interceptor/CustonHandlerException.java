@@ -4,7 +4,6 @@ import com.nisum.msusuario.entity.CustomError;
 import com.nisum.msusuario.exception.NotUniqueEmailException;
 import com.nisum.msusuario.exception.NotUniqueUserSecurityException;
 import com.nisum.msusuario.exception.ResourceNotFoundException;
-import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.JwtException;
 import jakarta.validation.ConstraintViolationException;
 import lombok.extern.slf4j.Slf4j;

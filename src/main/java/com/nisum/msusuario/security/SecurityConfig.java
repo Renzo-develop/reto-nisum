@@ -30,7 +30,7 @@ public class SecurityConfig {
     @Autowired
     private JwtAuthFilter authFilter;
 
-    private static final String[] WHITE_LIST = {"/auth/addNewUser", "/auth/generateToken", "/h2-console/**", "/doc/swagger-ui/**","/v3/api-docs","/v3/api-docs/*","/swagger-ui/*","/swagger-ui.html"};
+    private static final String[] WHITE_LIST = {"/auth/addNewUser", "/auth/generateToken", "/h2-console/**", "/doc/swagger-ui/**"};
 
     private static final String[] ROLE_REQUIRED_LIST = {"/user/all/**", "/user/find/**", "/user/create/**", "/h2-console/**"};
 
@@ -43,20 +43,11 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
         return httpSecurity
-//                .csrf(AbstractHttpConfigurer::disable)
                 .csrf().disable()
                 .authorizeHttpRequests()
                 .requestMatchers(WHITE_LIST).permitAll()
                 .and()
                 .authorizeHttpRequests().requestMatchers(ROLE_REQUIRED_LIST).authenticated()
-                .and()
-                .authorizeHttpRequests().requestMatchers("/user/all/**").authenticated()
-                .and()
-                .authorizeHttpRequests().requestMatchers("/user/create/**").authenticated()
-                .and()
-                .authorizeHttpRequests().requestMatchers("/user/find/**").authenticated()
-                .and()
-                .authorizeHttpRequests().requestMatchers(toH2Console()).permitAll()
                 .and()
                 .headers().frameOptions().sameOrigin()
                 .and()
